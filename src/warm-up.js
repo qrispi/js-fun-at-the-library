@@ -11,28 +11,28 @@
 // a book's title and page count.
 
 var title = "Harry Potter"
-var pageCount = 989
+var pages = 989
 
 
 
 // Reassign (not initialize) your "pages" variable from above. An editor came around and
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
-pageCount = (Math.ceil(pageCount * 0.75))
+pages = (Math.ceil(pages * 0.75))
 
 
 // Initialize a new variable "movie", but leave it undefined
-
+var movie 
 
 
 // Create a variable named "sequel", and assign it to a be a sequel of your
 // book (made up or not!). Your sequel must make use of your "title" variable from above
-
+var sequel = `${title} 2: Revenge of the Sith`
 
 
 // Initialize a new variable "isFavorite", and assign it to a boolean value indicating
 // if the book you chose is your favorite book or not
-
+var isFavorite = false
 
 
 
@@ -40,7 +40,9 @@ pageCount = (Math.ceil(pageCount * 0.75))
 // assign a boolean value to this variable. If "pages" is less than 25, the
 // variable should be true, otherwise it should be false. You MUST use a
 // comparison operator.
+var isShortStory
 
+(pages < 25) ? (isShortStory = true) : (isShortStory = false)
 
 
 //------------------------- Conditionals -------------------------//
