@@ -10,15 +10,15 @@
 // Initialize two new variables, "title", and "pages", and assign values to them with
 // a book's title and page count.
 
-// var title = "Harry Potter";
-// var ...
+var title = "Harry Potter"
+var pageCount = 989
 
 
 
 // Reassign (not initialize) your "pages" variable from above. An editor came around and
 // condensed the book, use a built in math operator to make the page count a quarter
 // of what it currently is 
-
+pageCount = (Math.ceil(pageCount * 0.75))
 
 
 // Initialize a new variable "movie", but leave it undefined
