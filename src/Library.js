@@ -11,7 +11,7 @@ function createLibrary(name) {
 
 function addBook(library, book) {
   var properShelf = book.genre
-  return library.shelves.properShelf.push(book)
+  return library['shelves'][properShelf].push(book)
 }
 
 function checkoutBook(library, title, genre) {
