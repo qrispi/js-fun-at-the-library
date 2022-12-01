@@ -11,8 +11,12 @@ function unshelfBook(title, shelf) {
   return checkedOut = shelf.splice(shelfPosition, 1)
 }
 
-function listTitles() {
-
+function listTitles(shelf) {
+var titles = []
+for (i=0; i<shelf.length; i++) {
+  titles.splice(i, 0, shelf[i].title)
+}
+return titles.join(', ')
 }
 
 function searchShelf() {
