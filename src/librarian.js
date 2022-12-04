@@ -6,17 +6,17 @@ class Librarian {
   greetPatron(name, morning) {
     return (morning) ? `Good morning, ${name}!` : `Hello, ${name}!`
   }
-  findBook(bookTitle) {
+  findBook(title) {
     var shelfKeys = Object.keys(this.library.shelves)
     for (var i=0; i < shelfKeys.length; i++) {
       for (var x=0; x < this.library.shelves[shelfKeys[i]].length; x++) {
-        if (this.library.shelves[shelfKeys[i]][x].title === bookTitle) {
+        if (this.library.shelves[shelfKeys[i]][x].title === title) {
           this.library.shelves[shelfKeys[i]].splice(x, 1)
-          return `Yes, we have ${bookTitle}`
+          return `Yes, we have ${title}`
         }
       }
     }
-    return `Sorry, we do not have ${bookTitle}`
+    return `Sorry, we do not have ${title}`
   }
   calculateLateFee(days) {
     return Math.ceil(days * 0.25)
