@@ -4,4 +4,4 @@ class Librarian {
   }
 }
 
-module.exports = Librarian;
+module.exports = Librarian
