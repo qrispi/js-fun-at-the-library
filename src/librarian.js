@@ -3,6 +3,9 @@ class Librarian {
     this.name = name,
     this.library = library
   }
+  greetPatron(name, morning) {
+    return (morning) ? `Good morning, ${name}!` : `Hello, ${name}!`
+  }
 }
 
 module.exports = Librarian
