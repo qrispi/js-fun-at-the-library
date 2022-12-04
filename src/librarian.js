@@ -19,6 +19,9 @@ class Librarian {
       return `Sorry, we do not have ${bookTitle}`
     }
   }
+  calculateLateFee(days) {
+    return Math.ceil(days * 0.25)
+  }
 }
 
 module.exports = Librarian
